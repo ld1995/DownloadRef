@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.Display">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="574" height="521"/>
+    </constraints>
+    <properties>
+      <minimumSize width="300" height="250"/>
+      <preferredSize width="300" height="250"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="cdfc0" class="javax.swing.JButton" binding="startPauseButton">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag top="10" left="10" bottom="10" right="10" weightx="0.1" weighty="0.1"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="false"/>
+          <font size="16"/>
+          <minimumSize width="60" height="40"/>
+          <text value="Start"/>
+        </properties>
+      </component>
+      <component id="542a" class="javax.swing.JButton" binding="stopButton">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag top="10" left="10" bottom="10" right="10" weightx="0.1" weighty="0.1"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="false"/>
+          <font size="16"/>
+          <minimumSize width="60" height="40"/>
+          <text value="Stop"/>
+        </properties>
+      </component>
+      <grid id="e0472" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="aa5a1" class="javax.swing.JButton" binding="saveButton">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <focusPainted value="false"/>
+              <focusable value="false"/>
+              <font size="16"/>
+              <preferredSize width="80" height="40"/>
+              <text value="Save"/>
+            </properties>
+          </component>
+          <component id="59dcf" class="javax.swing.JTextField" binding="urlField" custom-create="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+              <focusable value="true"/>
+              <font size="16"/>
+              <horizontalAlignment value="2"/>
+              <preferredSize width="14" height="40"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="289a" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.1" weighty="0.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="f958a" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="10" bottom="10" right="10" weightx="0.1" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <horizontalTextPosition value="11"/>
+              <text value="Найдено ссылок :"/>
+            </properties>
+          </component>
+          <component id="c01ca" class="javax.swing.JLabel" binding="linksDetectedCount">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="10" bottom="10" right="10" weightx="0.1" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <text value="0"/>
+            </properties>
+          </component>
+          <component id="25644" class="javax.swing.JLabel" binding="finishCountOfLinks">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="10" bottom="10" right="10" weightx="0.1" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <text value="0"/>
+            </properties>
+          </component>
+          <component id="2c66c" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="10" bottom="10" right="10" weightx="0.1" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <text value="Ссылок обработано :"/>
+            </properties>
+          </component>
+          <component id="acb0a" class="javax.swing.JLabel" binding="timeLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="10" bottom="10" right="10" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <text value="00:00:00.000"/>
+            </properties>
+          </component>
+          <component id="2cadb" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="10" bottom="10" right="10" weightx="0.1" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <text value="Статус :"/>
+            </properties>
+          </component>
+          <component id="4c396" class="javax.swing.JLabel" binding="stateLabel">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="10" bottom="10" right="10" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <text value="Не запущено"/>
+            </properties>
+          </component>
+          <component id="c21b5" class="javax.swing.JButton" binding="openButton">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.1" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+              <focusPainted value="false"/>
+              <focusable value="false"/>
+              <font size="16"/>
+              <minimumSize width="68" height="200"/>
+              <preferredSize width="80" height="40"/>
+              <text value="Open"/>
+            </properties>
+          </component>
+          <component id="96143" class="javax.swing.JTextField" binding="path">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <gridbag top="10" left="10" bottom="10" right="10" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <enabled value="false"/>
+              <focusable value="false"/>
+              <font size="16"/>
+              <opaque value="true"/>
+            </properties>
+          </component>
+          <component id="99af9" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="10" bottom="10" right="10" weightx="0.1" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <text value="Ссылок обрабатывается :"/>
+            </properties>
+          </component>
+          <component id="6a373" class="javax.swing.JLabel" binding="linksInProcessCount">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="10" bottom="10" right="10" weightx="0.1" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <text value="0"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
