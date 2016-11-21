@@ -27,14 +27,13 @@ public class WriteData {
     }
 
     private void search(String url, Map<String, Set<String>> urlMap , String sign) {
-        for (Map.Entry<String, Set<String>> stringSetEntry : urlMap.entrySet()) {
-            if (stringSetEntry.getKey().equals(url)) {
-                joiner.add(sign + stringSetEntry.getKey() + "\r\n");
-                info.add(stringSetEntry.getKey());
-                for (String urlForMap : stringSetEntry.getValue())
-                    if (!info.contains(urlForMap))
-                        search(urlForMap, urlMap, (sign + "\t"));
-            }
-        }
+        joiner.add(sign + url + "\r\n");
+        info.add(url);
+        urlMap.get(url).stream().filter(s -> !info.contains(s)).forEach(s -> search(s, urlMap, (sign + "\t")));
+//        Set<String> atUrlContents  = urlMap.get(url);
+//        for (String content : atUrlContents) {
+//            if (!info.contains(content))
+//                search(content, urlMap, (sign + "\t"));
+//        }
     }
 }
